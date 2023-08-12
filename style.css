@@ -1,0 +1,136 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scrollbar-width: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+#Discord {
+    background:linear-gradient(307deg, #891aa8bd, black 53%, #1d449f);
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 3rem;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1rem;
+    padding: 0 14%;
+    margin: 1rem 0px;
+    column-gap: 1rem;
+}
+.div a{
+    overflow: hidden;
+    border-radius: 11px;
+}
+
+.div a img {
+    width: 10rem;
+    border-radius: 11px;
+    box-shadow: 0px -1px 20px 3px #b009bbcc;
+    border: #ffffffa8 2.5px solid;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.div a img:hover{
+    scale: 1.06;
+    overflow: hidden;
+    border: none;
+    box-shadow: none;
+}
+
+.topheaders h1 {
+    color: white;
+    font-family: helvetica;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.052em;
+    font-size: 3.6rem;
+    text-transform: capitalize;
+}
+
+.topheaders p {
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 1rem 0 2rem;
+    letter-spacing: 0.25em;
+}
+
+.bottom p {
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin: 3rem 0 0.45rem;
+}
+
+.bottom a {
+    color: #fb0090;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    transition: 0.4s;
+    font-size: 116%;
+}
+.bottom a:hover{
+    color: #b009bbcc;
+    letter-spacing: 0.03em;
+}
+
+@media (max-width:767.5px) {
+    .topheaders h1{
+        font-size: 300%;
+    }
+    .topheaders p{
+        font-size: 150%;
+    }
+    .div a{
+        width: 86px;
+        height: 86px;
+    }
+    .div a img{
+        width: 100%;
+    }
+    .div{
+        padding: 0 2%;
+    }
+    #Discord{
+        padding-top: 5rem;
+        
+    }
+    .bottom p{
+        font-size: 85%;
+    }
+    .bottom a{
+        font-size: 85%;
+    }
+}   
